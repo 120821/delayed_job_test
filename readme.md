@@ -17,6 +17,11 @@ gem 'sidekiq'
 gem 'pg'
 ```
 
+修改config/application.rb,增加
+```
+config.active_job.queue_adapter = :sidekiq
+```
+
 修改config/database.yml
 ```
 default: &default
